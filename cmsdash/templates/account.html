@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <div class="media">
+            <img src={{ image_file }} alt="profile picture" class="account-img">
+            <div class="media-body">
+                <h2 class="account-heading">{{ current_user.username }}</h2>
+                <p class="text-secondary">{{ current_user.email }}</p>
+            </div>
+        </div>
+
+            <form method="POST" action="" enctype="multipart/form-data">
+               {# hidden tag adds csrf protection #}
+                {{ updateform.hidden_tag() }}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Account Info</legend>
+                    <div class="form-group">
+                        {{ updateform.username.label(class='form-control-label') }}
+
+                        {% if updateform .username.errors %}
+                            {{ updateform.username(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in updateform.username.errors %}
+                                <span>{{error}}</span>
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                            {{ updateform.username(class='form-control form-control-lg') }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ updateform.email.label(class='form-control-label') }}
+                        {% if updateform .email.errors %}
+                            {{ updateform.email(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in updateform.email.errors %}
+                                <span>{{error}}</span>
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                            {{ updateform.email(class='form-control form-control-lg') }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ updateform.picture.label() }}
+                        {{ updateform.picture(class='form-control-file') }}
+                        {% if updateform.picture.errors %}
+                            {% for error in updateform.picture.errors %}
+                        <span class="text-danger">{{error}}</span></div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    {{ updateform.submit(class='btn btn-outline-info') }}
+                </div>`
+            </form>
+            <form method="POST" action="{{ url_for('users.invite') }}" enctype="multipart/form-data">
+               {# hidden tag adds csrf protection #}
+                {{ inviteform.hidden_tag() }}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Invite New User</legend>
+                    <div class="form-group">
+                        {{ inviteform.invite_email.label(class='form-control-label') }}
+                        {% if inviteform.invite_email.errors %}
+                            {{ inviteform.invite_email(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in inviteform.invite_email.errors %}
+                                <span>{{error}}</span>
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                            {{ inviteform.invite_email(class='form-control form-control-lg') }}
+                        {% endif %}
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    {{ inviteform.submit(class='btn btn-outline-info') }}
+                </div>`
+            </form>
+        </div>
+
+{% endblock content %}
