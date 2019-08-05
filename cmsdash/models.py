@@ -53,5 +53,8 @@ class Product(db.Model):
     price = db.Column(db.Integer, nullable=False)
     in_stock = db.Column(db.Boolean, nullable=False, default=True)
     description = db.Column(db.Text, nullable=False)
-    main_image = db.Column(db.String(20), nullable=False, default='default.jpg')
+    main_image = db.Column(db.String(20), nullable=False, default='default.png')
     weight = db.Column(db.Integer, nullable=True)
+
+    def __repr__(self):
+        return f"Product('{self.name}', '{self.price}', '{self.main_image}')"

@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
     <div class="content-section">
-        <form method="POST" action="">
+        <form method="POST" action="" enctype="multipart/form-data">
            {# hidden tag adds csrf protection #}
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
@@ -66,13 +66,13 @@
                 <div class="form-group">
                     {{ form.picture.label() }}
                     {{ form.picture(class='form-control-file') }}
+                    current: {{ form.picture.data }}
                     {% if form.picture.errors %}
                         {% for error in form.picture.errors %}
-                    <span class="text-danger">{{error}}</span></div>
+                            <span class="text-danger">{{error}}</span></div>
                         {% endfor %}
                     {% endif %}
                 </div>
-
             </fieldset>
             <div class="form-group">
                 {{ form.submit(class='btn btn-outline-info') }}
