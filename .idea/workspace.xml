@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="357105b4-9d1f-4308-89b5-00c611c4071c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cmsdash/products/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmsdash/static/productpics/default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmsdash/templates/product_dash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmsdash/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmsdash/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmsdash/products/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmsdash/products/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmsdash/products/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmsdash/products/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmsdash/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/cmsdash/site.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmsdash/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cmsdash/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmsdash/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmsdash/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmsdash/templates/new_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmsdash/templates/new_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
