@@ -20,7 +20,7 @@ Thanks for viewing my repository.
 
 Email details are used to send password recovery links from your email to the registered email of a user.
 
-#Additional Config
+## Additional Config
 
 ### Gmail Account
 
