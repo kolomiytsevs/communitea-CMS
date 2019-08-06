@@ -219,9 +219,20 @@ a.article-title:hover {
     margin-bottom:20px;
 }
 
+.message-danger {
+    width:80%;
+    padding:5px;
+    background-color:darkred;
+    color:white;
+    text-align:center;
+    margin:auto;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
 .update-btn {
     padding:5px 10px;
-    background-color:rgb(180,255,120);
+    background-color:#f90;
     color:white;
     text-decoration:none;
     border-radius:10px;
