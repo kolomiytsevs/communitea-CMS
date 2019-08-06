@@ -1,8 +1,8 @@
-# CommuniTea CMS - Content Management System Designed for the CommuniTea Club Ecommerce web app.
+# CommuniTea CMS - Ecommerce & Blog Content Management System.
 
-Thanks for viewing my repository. 
+Thanks for viewing my repository.
 
-![A view of the dashboard](https://res.cloudinary.com/eastcott-and-burgess/image/upload/v1561817628/Capture2_yehz0z.jpg)
+![A view of the dashboard](https://res.cloudinary.com/eastcott-and-burgess/image/upload/v1565104561/CMS_obobyu.jpg)
 
 # Scripts
 ## Running
