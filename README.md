@@ -6,18 +6,23 @@ Thanks for viewing my repository.
 
 # Scripts
 ## Running
-`npm run client`: Runs only the front-end client.
 
-`npm run server`: Runs only the back-end server.
-
-`npm run dev`: Runs both the front and back end concurrently
 
 # Environmental Variables
 
-`MONGO_URI_SECRET`: MongoDB URI Key
+`SECRET_KEY`: Randomly generated value used to encrypt JWT.
 
-`UNSPLASH_ACCESS_KEY`: Unsplash access key used for client identification.
+`SQLALCHEMY_DATABASE_URL`: connection link to the SQL database of your choice.
 
-`UNSPLASH_SECRET`: This is the Unsplash API client secret.
+`EMAIL_USER`: This is your gmail email e.g. sasha@gmail.com .
 
-`JWT_KEY`: This is the JWT electronic signature used to make sure that the JWT message has not been altered when sent to the server. This can be anything you want it to be.
+`EMAIL_PASSWORD`: This is the password to your email account.
+
+Email details are used to send password recovery links from your email to the registered email of a user.
+
+#Additional Config
+
+### Gmail Account
+
+If you email authentication errors being thrown when clicking 'forgot password', it probably means that you will have to change your gmail security policy to 'AAlow access to less secure apps'.
+
